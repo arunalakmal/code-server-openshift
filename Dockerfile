@@ -52,6 +52,7 @@ RUN . /etc/lsb-release && \
       curl \
       dumb-init \
       wget \
+      gettext \
       httpie \
       nodejs \
       python \
