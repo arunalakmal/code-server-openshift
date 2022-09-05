@@ -28,7 +28,7 @@ parameters:
     value: coder
   - name: DOCKER_IMAGE
     description: Docker image to use
-    value: arunalakmal/codeserver:1.0.0
+    value: arunalakmal/codeserver:1.0.1
     # value: jefferyb/code-server:latest
     # value: chinodesuuu/coder:openshift
     required: true
