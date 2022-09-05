@@ -69,7 +69,7 @@ RUN . /etc/lsb-release && \
 RUN locale-gen en_US.UTF-8 && \
     cd /tmp && \
 # install code-server
-    wget https://github.com/coder/code-server/releases/download/v4.6.1/code-server-4.6.1-linux-amd64.tar.gz && tar -zxvf code-server-4.6.1-linux-amd64.tar.gz && mv code-server-4.6.1-linux-amd64/code-server /usr/bin && \
+    wget https://github.com/coder/code-server/releases/download/v4.6.1/code-server_4.6.1_amd64.deb && dpkg -i code-server_4.6.1_amd64.deb && \
 # install openshift/kubernetes client tools
     wget -O - https://github.com/openshift/origin/releases/download/${oc_version}/openshift-origin-client-tools-${oc_version}-${oc_version_commit}-linux-64bit.tar.gz | tar -xzv --strip 1 openshift-origin-client-tools-${oc_version}-${oc_version_commit}-linux-64bit/oc openshift-origin-client-tools-${oc_version}-${oc_version_commit}-linux-64bit/kubectl && \
     mv oc kubectl /usr/bin/ && \
