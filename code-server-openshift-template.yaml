@@ -17,7 +17,7 @@ metadata:
     description: "A distribution of Coder's Visual Studio Code in browser designed to work for CNCF-compliant orchestators."
     tags: "coder,code,vscode"
     openshift.io/provider-display-name: "Code Server"
-    openshift.io/documentation-url: "https://github.com/jefferyb/code-server-openshift"
+    #openshift.io/documentation-url: "https://github.com/jefferyb/code-server-openshift"
 parameters:
   - name: NAME
     description: Name of your application
@@ -28,7 +28,7 @@ parameters:
     value: coder
   - name: DOCKER_IMAGE
     description: Docker image to use
-    value: arunalakmal/codeserver:1.0.1
+    value: ghcr.io/arunalakmal/codeserver:1.0.1
     # value: jefferyb/code-server:latest
     # value: chinodesuuu/coder:openshift
     required: true
